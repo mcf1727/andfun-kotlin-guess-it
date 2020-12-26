@@ -58,6 +58,8 @@ class GameFragment : Fragment() {
             viewModel.onSkip()
         }
 
+        //viewModel.score.value = -10000
+
         /** Setting up LiveData observation relationship **/
         viewModel.word.observe(this, Observer { newWord ->
             binding.wordText.text = newWord
