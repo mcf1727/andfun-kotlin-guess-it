@@ -38,7 +38,9 @@ class GameViewModel : ViewModel() {
 
     // The current score
     //val score = MutableLiveData<Int>()
+    // internal
     private val _score = MutableLiveData<Int>()
+    //external
     val score: LiveData<Int>
         get() = _score
 
